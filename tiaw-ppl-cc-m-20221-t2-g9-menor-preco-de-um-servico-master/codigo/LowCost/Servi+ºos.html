@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="ser-css.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css"
+  />
+    <title>LowCost</title>
+</head>
+
+
+<body>
+
+    <header>
+        <link rel="shortcut icon" type="imagem/x-icon" href="images/logoicon.ico">
+        <div class="row">
+            <div class="col-12 header_area">
+                <div class="row">
+                    
+                    <div class="col-12 col-sm-12 col-md-8 col-lg-10 memu_area">
+                        <nav class="navbar navbar-expand-md fixed-top menu-area">
+                            <a class="navbar-brand" href="#"><img src="images/Low_Cost.png" class="logo"></a>
+                            <a class="navbar-brand" href="#"><img src="images/logo.png" class="logo dar_espaco"></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                              <img src="images/more.png" class="more">
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                            <a class="flex-sm-fill text-sm-center nav-link " href="seusServicos.html">Home</a>
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle texto" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Compare
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item texto_drop" href="Tabelas.html">Tabelas</a>
+                                    <a class="dropdown-item texto_drop" href="Adicione.html">Adicione</a>
+                                    <a class="dropdown-item texto_drop active" href="Serviços.html">Serviços</a>
+                                </div>
+                            </div>
+                            <a class="flex-sm-fill text-sm-center nav-link" href="Forum.html">Fórum</a>
+
+                            <a class="flex-sm-fill text-sm-center nav-link" href="Sobre.html">Sobre</a>
+                          <a href="Perfil.html">
+                            <div class="perfil">
+                                <img src="images/perfil.png" class="perfil">
+                            </div><a href="Perfil.html">
+                          </a>
+                
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="container">  
+        <nav>
+           
+            <a href="seusServicos.html"><button class="btn botao-padrao" type="button" id="btn-forum">Seus serviços</button></a>
+          </nav>
+          <h1>Todos os serviços</h1>
+          <p>Serviços e preços de todos os usuários</p>
+      
+          <input
+            id="search"
+            type="text"
+            class="search"
+            placeholder="pesquisar por..."
+            oninput="setAutoSearch()"
+          />
+          <div id="main"></div>
+    </main>
+
+    <script>
+        setInitialServices = function () {
+         services = [
+          {
+            user: { id: 2, name: "Ciclano do Queijo" },
+            name: "Internet 100 megas",
+            enterprise: "CLARO",
+            price: 30,
+            notes:
+              "Ameaçei cancelar e eles me deram um desconto de 40 pra 30 sem perder nada.",
+          },
+          {
+            user: { id: 3, name: "Arthur Ricardo" },
+            name: "Água",
+            enterprise: "Copasa",
+            price: 40,
+          },
+          {
+            user: { id: 5, name: "Joaquim da Silva" },
+            name: "Telefone fixo",
+            enterprise: "CLARO",
+            price: 29.9,
+          },
+          {
+            user: { id: 2, name: "Ciclano do Queijo" },
+            name: "Assinatura",
+            enterprise: "Netflix",
+            price: 10,
+          },
+          {
+            user: { id: 5, name: "Joaquim da Silva" },
+            name: "Televisão",
+            enterprise: "CLARO",
+            price: 49.9,
+          },
+          {
+            user: { id: 3, name: "Arthur Ricardo" },
+            name: "40 megas celular",
+            enterprise: "CLARO",
+            price: 29.9,
+            notes:
+              "Disse que a OI tinha a mesma coisa mais barato e abaixaram o preço.",
+          },
+          {
+            user: { id: 7, name: "Afonsino Augusto" },
+            name: "Internet 100 megas",
+            enterprise: "GVT",
+            price: 89.99,
+            notes:
+              "Peguei uma empresa de internet lá do Acre e usei como comparação e eles abaixaram até ficar igual o da empresa do Acre.",
+          },
+          {
+            user: { id: 3, name: "Arthur Ricardo" },
+            name: "Energia",
+            enterprise: "CEMIG",
+            price: 200,
+          },
+          {
+            user: { id: 27, name: "João Pedro" },
+            name: "Seguro automóvel",
+            enterprise: "Bradesco Seguros",
+            price: 22.50,
+            notes: "Plano Start"
+          },
+          {
+            user: { id: 27, name: "João Pedro" },
+            name: "Plano dental",
+            enterprise: "Bradesco Seguros",
+            price: 80.99,
+          },
+          {
+            user: { id: 27, name: "João Pedro" },
+            name: "Plano de Saúde",
+            enterprise: "Bradesco Seguros",
+            price: 127.88,
+            notes:
+              "Dão desconto se você tiver algum familiar que também usa o plano deles",
+          },
+          {
+            user: { id: 7, name: "Afonsino Augusto" },
+            name: "Assinatura",
+            enterprise: "Spotify",
+            price: 8.99,
+            notes:
+              "Promoção que fizeram no natal",
+          },
+          {
+            user: { id: 2, name: "Ciclano do Queijo" },
+            name: "Energia",
+            enterprise: "CEMIG",
+            price: 127.5,
+            notes:
+              "Se você ligar e dizer que você recebe menos que 3 salários mínimos eles reduzem sua conta de acordo com algua regra nova do governo lá.",
+          },
+        ];
+        localStorage.setItem("services", JSON.stringify(services));       
+        }
+
+        getServicesFromStorage = function () {
+          let services = localStorage.getItem("services");
+          services = JSON.parse(services);
+          if (!services) setInitialServices();
+          services = JSON.parse(localStorage.getItem("services"));
+          return services;
+        };
+        setServices = function (servicesFromSearch) {
+          let services;
+          if (servicesFromSearch) services = servicesFromSearch;
+          else {
+            services = getServicesFromStorage();
+          }
+    
+          if (!services) {
+            document.getElementById("main").innerHTML =
+              "Abra o index.html primeiro";
+            return;
+          }
+    
+          let html = "";
+          services.forEach((s, i) => {
+            if (!s.notes) s.notes = "";
+            html += `
+        <details open>
+          <summary style="width: 100%">
+            ${s.enterprise} - ${s.name} - R$ ${s.price}
+          </summary>
+          ${s.notes}
+          <p class="userName">@${s.user.name} </p>
+        </details>
+        `;
+          });
+    
+          document.getElementById("main").innerHTML = html;
+        };
+    
+        setAutoSearch = function (a) {
+          const searchInput = document.querySelector("#search");
+    
+          let value = searchInput.value;
+          if (!value || value.trim().length == 0) {
+            setServices();
+            return;
+          }
+    
+          value = value.trim().toLowerCase();
+          const userTyped = value;
+    
+          const allServices = getServicesFromStorage();
+          let filteredServices = [];
+    
+          // Procurar por todos os campos do objeto service por
+          // algo que o usuário digitou
+          allServices.forEach((s) => {
+            let match = false;
+            Object.keys(s).forEach((field) => {
+              if (!s[field].includes) return; // Se não for string
+              if (s[field].toLowerCase().includes(userTyped)) match = true;
+            });
+            if (match) filteredServices.push(s);
+          });
+    
+          setServices(filteredServices);
+        };
+    
+        setServices();
+        setAutoSearch();
+      </script>
+
+    <footer>
+        <div class="row">
+            <div class="col-12 footer_area">
+                Copyright 2022 - LowCost
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
