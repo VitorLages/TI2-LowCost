@@ -1,0 +1,43 @@
+label + input {
+    width: 97%;
+    margin-bottom: 2rem; 
+}
+
+nav > ul > li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 1rem;
+}
+
+
+#trash {
+    margin-top: 1rem;
+    display: block;
+    float: right;
+    padding: .2rem 2rem;
+    font-size: large;
+}
+
+summary {
+    font-size: large;
+}
+
+#add {
+    font-size: larger;
+}
+
+h1 {
+    text-align: center;
+}
+
+.userName {
+    margin-top: 2rem;
+    font-style: italic;
+    font-weight: 600;
+
+}
+
+#search {
+    width: 97%;
+    margin-bottom: 3rem;
+}
