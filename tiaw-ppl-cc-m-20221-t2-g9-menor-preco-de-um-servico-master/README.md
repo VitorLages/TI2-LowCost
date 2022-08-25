@@ -4,16 +4,16 @@ Há como você ligar para seu provedor de serviços como internet, tv a cabo e a
 
 ## Alunos integrantes da equipe
 
-* Eric Miranda
 * Letícia Bianca
 * Vitor Lages
-* Davi Caetano
-* Lucas Lopes
-* Lucas Moreira
+* Beatriz Padrão
+* Gustavo Dias
+*
 
 ## Professores responsáveis
 
-* Rommel
+* Felipe 
+* 
 
 ## Instruções de utilização
 
